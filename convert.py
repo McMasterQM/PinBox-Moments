@@ -1,9 +1,9 @@
 import os
 
 path = os.getcwd()
-fname='x4_mocked.py'
+fname='moments.py'
 
-os.system('jupyter nbconvert --to script x4_mocked.ipynb')
+os.system('jupyter nbconvert --to script moments.ipynb')
 
 with open(fname, 'r') as f:
     lines = f.readlines()
