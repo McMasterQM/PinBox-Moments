@@ -28,14 +28,14 @@ x^k \cos(2ax) \,dx $$
 
 Using the [double-angle formula](https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Double-angle_formulae)
 $$
-\sin^2 x = \tfrac{1}{2} \left(1-2\cos 2x \right)
+\sin^2 x = \tfrac{1}{2} \left(1-\cos 2x \right)
 $$
 and substituting $u = \frac{x}{a}$, gives
 $$
 \begin{align}
 m_{k,n} &= \frac{2}{a} \int_0^1  (au)^k \sin^2\left(n \pi u\right) \,adu \\
-&= a^k \int_0^1  u^k \left(1-2\cos \left(2n \pi u\right) \right) \,du \\
-&=\frac{a^k}{k+1} \left(1-2\cdot{}_1F_2\left(\tfrac{k+1}{2};\tfrac{1}{2},\tfrac{k+3}{2};-(n \pi)^2 \right)\right)
+&= a^k \int_0^1  u^k \left(1-\cos \left(2n \pi u\right) \right) \,du \\
+&=\frac{a^k}{k+1} \left(1-{}_1F_2\left(\tfrac{k+1}{2};\tfrac{1}{2},\tfrac{k+3}{2};-(n \pi)^2 \right)\right)
 \end{align}
 $$
 
