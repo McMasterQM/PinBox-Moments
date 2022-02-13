@@ -1,4 +1,4 @@
-from ..x4_mocked import *
+from ..moments import *
 import numpy as np
 from numpy.testing import assert_equal, assert_allclose
 from scipy.integrate import quad
