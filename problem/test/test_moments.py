@@ -15,7 +15,7 @@ def test_check_moments():
     a = abs(np.random.rand(10)*10)
     for n_, a_ in zip (n, a):
         n_ = int(abs(n_)) + 1
-        res = calc_average(n_, a_, 2)
+        res = compute_moment_numerical(n_, a_, 2)
         true_answer = a_**2*(1/3 - 1./(2*n_**2*np.pi**2))
         assert_allclose(res, true_answer)
     
@@ -32,5 +32,5 @@ def test_check_moments():
     power = 4
     np.random.seed(42)
     for n, a, t_answer in zip(range(1, 10), 5*abs(np.random.rand(10)), answers):
-        answer = calc_average(int(n), a, power)
+        answer = compute_moment_numerical(int(n), a, power)
         assert_allclose(answer, t_answer)
